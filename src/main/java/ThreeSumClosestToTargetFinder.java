@@ -27,7 +27,7 @@ public class ThreeSumClosestToTargetFinder {
             return 0;
 
         Collections.sort(list);
-        int closest = Integer.MAX_VALUE;;
+        int closest = Integer.MAX_VALUE;
         int sum;
         int result = 0;
 
@@ -51,14 +51,9 @@ public class ThreeSumClosestToTargetFinder {
                 else if (sum > target) {
                     --k;
                 }
-                else {
-                    ++i;
-                    j = i+1;
-                }
             }
         }
 
         return result;
     }
-
 }
